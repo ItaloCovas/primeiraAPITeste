@@ -23,6 +23,7 @@ routes.post('/add', (req, res) => {
     return res.json(body);
 });
 
+// Deletar dados
 routes.delete('/:id', (req,res) => {
     const id = req.params.id;
     let newDB = db.filter(item => {
